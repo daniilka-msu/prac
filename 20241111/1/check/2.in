@@ -1,0 +1,12 @@
+x, y, z = Omnibus(), Omnibus(), Omnibus()
+del x.alpha
+x.alpha = x.beta = x.gamma = 123
+y.beta = y.gamma = y.delta = 456
+z.gamma = z.delta = z.epsilon = 789
+print(x.alpha, x.beta, x.gamma, y.beta, y.gamma, y.delta, z.gamma, z.delta, z.epsilon)
+del x.gamma, y.delta, z.epsilon
+print(x.alpha, x.beta, y.beta, y.gamma, z.gamma, z.delta)
+del x.gamma, z.epsilon
+print(x.alpha, x.beta, y.beta, y.gamma, z.gamma, z.delta)
+x.gamma = y.alpha = z.epsilon = 321
+print(x.alpha, x.beta, x.gamma, y.beta, y.gamma, z.gamma, z.delta, z.epsilon)

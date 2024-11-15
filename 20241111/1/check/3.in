@@ -1,0 +1,12 @@
+p, q, r = Omnibus(), Omnibus(), Omnibus()
+del p.omega
+p.alpha = p.beta = 500
+q.beta = q.gamma = 600
+r.gamma = r.delta = 700
+print(p.alpha, p.beta, q.beta, q.gamma, r.gamma, r.delta)
+del p.beta, q.gamma, r.delta
+print(p.alpha, q.beta, r.gamma)
+del p.beta, r.delta
+print(p.alpha, q.beta, r.gamma)
+p.beta = q.alpha = r.omega = 800
+print(p.alpha, p.beta, q.alpha, q.beta, r.gamma, r.omega)
