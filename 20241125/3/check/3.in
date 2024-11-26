@@ -1,0 +1,13 @@
+wo = Vowel(y=22, a=12, i=3)
+wo.e = wo.o = wo.u = 100500
+print(wo, wo.full)
+
+try:
+    wo.g = 2
+except AttributeError as e:
+    print("True")
+
+try:
+    t = wo.h
+except AttributeError as e:
+    print("True")
