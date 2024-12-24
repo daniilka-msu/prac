@@ -1,6 +1,6 @@
 #!/bin/bash
 # запускать из корневой директории вашего гит-репозитория
-HIM="Билоус Евгений" # имя вашего партнёра с http://grep.cs.msu.ru/prac/
+HIM="Леухин Илья" # имя вашего партнёра с http://grep.cs.msu.ru/prac/
 BASE_DIR=$(pwd)
 find "$BASE_DIR" -type d -name "check" | grep "2024" | while read -r CHECK_DIR; do
     FILE_PATH="$CHECK_DIR/remote"
@@ -14,4 +14,3 @@ EOF
 
 echo "Файл создан: $FILE_PATH"
 done
-
